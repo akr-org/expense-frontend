@@ -4,20 +4,5 @@ on:
     tags:
       - "*"
 jobs:
-  check-bats-version:
-    runs-on: self-hosted
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: SAST Scans
-        run: echo SAST Scans
-
-      - name: SCA Scans
-        run: echo SCA Scans
-
-      - name: Detect Secrets in Source Code
-        run: echo Detect Secrets
-
-      - name: Produce Artifacts
-        run: echo Produce artifacts
+  CI_Steps:
+    uses: akr-org/github-actions/.github/workflows/Tags_Ci.yml@main
