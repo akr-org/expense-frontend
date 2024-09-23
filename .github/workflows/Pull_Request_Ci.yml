@@ -10,3 +10,6 @@ env:
 jobs:
   CI_Steps:
     uses: akr-org/github-actions/.github/workflows/Pull_Request_Ci.yml@main
+    secrets: inherit
+    with:
+      service_name: expense-frontend
