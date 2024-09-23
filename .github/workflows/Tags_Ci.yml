@@ -3,6 +3,10 @@ on:
   push:
     tags:
       - "*"
+
+env:
+  service_name: expense-frontend
+
 jobs:
   CI_Steps:
     uses: akr-org/github-actions/.github/workflows/Tags_Ci.yml@main

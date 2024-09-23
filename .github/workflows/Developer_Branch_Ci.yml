@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - 'XPNS-*'
+
+env:
+  service_name: expense-frontend
+
 jobs:
   CI_Steps:
     uses: akr-org/github-actions/.github/workflows/Developer_Branch_Ci.yml@main
